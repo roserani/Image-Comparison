@@ -1,0 +1,18 @@
+For our project we are making use of descriptor_extractor_matcher.cpp of OpenCV library.
+Install OpenCV library version which is compatible with your ubuntu version
+
+Refer the following link for download and installation instructions
+http://sirivy.wordpress.com/2012/10/11/just-a-note-for-opencv-2-4-2-installation-on-ubuntu-12-04/
+
+We are also malking use of SIFT algorithm patented.
+
+We need to install the library to start the project.
+Go the OpenCV/samples/cpp/descriptor_extractor_matcher.cpp to get the code
+
+We are uploading part of the TestData.
+
+The following is the way to compile the program.
+Open the terminal and type the following //ensure that all libraries are included
+//Make sure that opencv library version compatibale with ubuntu version you are using
+
+g++ -I/usr/local/include/opencv -I/usr/local/include -ggdb `pkg-config --cflags opencv` -o `basename surf_keypoint_matcher.cpp .cpp` surf_keypoint_matcher.cpp `pkg-config --libs opencv`

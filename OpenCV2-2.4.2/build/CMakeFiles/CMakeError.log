@@ -1,0 +1,176 @@
+Determining if the function alloca exists failed with the following output:
+Change Dir: /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3974419599/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3974419599.dir/build.make CMakeFiles/cmTryCompileExec3974419599.dir/build
+make[1]: Entering directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3974419599.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -ffunction-sections  -DCHECK_FUNCTION_EXISTS=alloca -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec3974419599.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: warning: conflicting types for built-in function ‘alloca’ [enabled by default]
+Linking C executable cmTryCompileExec3974419599
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3974419599.dir/link.txt --verbose=1
+/usr/bin/cc      -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -ffunction-sections  -DCHECK_FUNCTION_EXISTS=alloca -O3 -DNDEBUG    CMakeFiles/cmTryCompileExec3974419599.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3974419599 -rdynamic 
+CMakeFiles/cmTryCompileExec3974419599.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text.startup.main+0x20): undefined reference to `alloca'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3974419599] Error 1
+make[1]: Leaving directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3974419599/fast] Error 2
+
+
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec87938779/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec87938779.dir/build.make CMakeFiles/cmTryCompileExec87938779.dir/build
+make[1]: Entering directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec87938779.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -ffunction-sections   -O3 -DNDEBUG -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec87938779.dir/CheckSymbolExists.cxx.o -c /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+make[1]: Leaving directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec87938779.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTryCompileExec87938779/fast] Error 2
+
+File /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1227320023/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1227320023.dir/build.make CMakeFiles/cmTryCompileExec1227320023.dir/build
+make[1]: Entering directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1227320023.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -ffunction-sections   -O3 -DNDEBUG -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1227320023.dir/CheckSymbolExists.cxx.o -c /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+make[1]: Leaving directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1227320023.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTryCompileExec1227320023/fast] Error 2
+
+File /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec761519162/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec761519162.dir/build.make CMakeFiles/cmTryCompileExec761519162.dir/build
+make[1]: Entering directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec761519162.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -ffunction-sections   -O3 -DNDEBUG -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec761519162.dir/CheckSymbolExists.cxx.o -c /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+make[1]: Leaving directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec761519162.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTryCompileExec761519162/fast] Error 2
+
+File /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1970058579/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1970058579.dir/build.make CMakeFiles/cmTryCompileExec1970058579.dir/build
+make[1]: Entering directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1970058579.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -ffunction-sections   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec1970058579.dir/CheckIncludeFile.c.o   -c /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:28: fatal error: linux/videodev.h: No such file or directory
+compilation terminated.
+make[1]: Leaving directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1970058579.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec1970058579/fast] Error 2
+
+
+Determining if the include file ffmpeg/avformat.h exists failed with the following output:
+Change Dir: /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec829900957/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec829900957.dir/build.make CMakeFiles/cmTryCompileExec829900957.dir/build
+make[1]: Entering directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec829900957.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -ffunction-sections   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec829900957.dir/CheckIncludeFile.c.o   -c /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:29: fatal error: ffmpeg/avformat.h: No such file or directory
+compilation terminated.
+make[1]: Leaving directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec829900957.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec829900957/fast] Error 2
+
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1182811913/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1182811913.dir/build.make CMakeFiles/cmTryCompileExec1182811913.dir/build
+make[1]: Entering directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1182811913.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -ffunction-sections   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec1182811913.dir/CheckIncludeFile.c.o   -c /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:28: fatal error: linux/videodev.h: No such file or directory
+compilation terminated.
+make[1]: Leaving directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1182811913.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec1182811913/fast] Error 2
+
+
+Determining if the include file ffmpeg/avformat.h exists failed with the following output:
+Change Dir: /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3460887303/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3460887303.dir/build.make CMakeFiles/cmTryCompileExec3460887303.dir/build
+make[1]: Entering directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3460887303.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -ffunction-sections   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec3460887303.dir/CheckIncludeFile.c.o   -c /home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:29: fatal error: ffmpeg/avformat.h: No such file or directory
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3460887303.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/rani/OpenCV-2.4.2/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3460887303/fast] Error 2
+
+
